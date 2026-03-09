@@ -25,7 +25,7 @@ The theory is **minimal**, **static**, and **non-perturbative**. It resolves the
 
 ## Download the Paper
 
-https://github.com/VinceGarrett/Hierarchical-Shell-Manifold-Theory/raw/main/HSMT_Full_Paper.pdf
+
 (LaTeX source also included)
 
 ## Repository Contents
