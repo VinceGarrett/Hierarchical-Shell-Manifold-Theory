@@ -1,0 +1,5 @@
+# Spectral Derivation Notebook
+
+Contains the exact solution of the shape-invariant Dirac operator in logarithmic coordinates, derivation of integer grading N, and Gaussian kernel w_N(ℓ).
+
+Full notebook will be uploaded shortly (Mathematica .nb format).
