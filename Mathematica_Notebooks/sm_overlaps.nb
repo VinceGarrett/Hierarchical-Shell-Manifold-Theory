@@ -1,1 +1,5 @@
+# Standard Model Overlap Integrals Notebook
 
+Computes all 19 SM parameters from lower-shell wavefunction overlaps (Yukawa matrices, CKM/PMNS, gauge couplings, three generations).
+
+Reproduces Table 1 in the paper using canonical parameters.
