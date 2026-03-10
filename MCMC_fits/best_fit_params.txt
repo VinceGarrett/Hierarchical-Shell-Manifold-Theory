@@ -1,0 +1,7 @@
+# HSMT Global MCMC Best-Fit Parameters
+H0 = 70.2
+Omega_m_h2 = 0.143
+ns = 0.966
+As = 2.10e-9
+sigma0 = 0.35
+Delta = 1.1e11
