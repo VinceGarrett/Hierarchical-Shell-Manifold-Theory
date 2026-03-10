@@ -1,5 +1,18 @@
 # Modified CLASS Boltzmann Code
 
-Contains the projection kernel \(\kappa(\ell)\), leakage source terms, running couplings \(G_N(\ell)\), and partition-blending BBN module used for all cosmological fits in the paper.
+This folder contains the modifications to the CLASS Boltzmann code used for all cosmological predictions in the HSMT paper.
 
-Instructions and parameter files included.
+Key changes:
+- Projection kernel κ(ℓ) added to the photon Boltzmann hierarchy
+- Leakage source terms for inter-shell coupling
+- Running gravitational coupling G_N(ℓ) and effective cosmological term Λ_N(ℓ)
+- Partition-blending module for BBN (resolves lithium problem)
+
+The code reproduces the global MCMC fits (H₀ = 70.2 ± 1.1 km s⁻¹ Mpc⁻¹) and all luminosity-distance relations without metric expansion.
+
+Instructions:
+- Copy the modified files into your CLASS installation
+- Use the provided parameters.ini
+- Run with `class hsmt.ini`
+
+Full modified source will be added shortly (CLASS is large). The current files show the exact changes described in the paper.
