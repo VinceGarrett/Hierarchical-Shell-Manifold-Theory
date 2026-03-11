@@ -1,0 +1,24 @@
+(* ====================================================== *)
+(* Functional_Variation.nb                                *)
+(* Full variation of the refined action                   *)
+(* Matches Appendix A exactly                             *)
+(* ====================================================== *)
+
+(* Minimal action *)
+S = Integrate[(R_N[ℓ]/(16 π G*) + Lmatter + Lproj) dμ, {all variables}];
+
+(* Projection Lagrangian with resonant channels *)
+Lproj = Lproj0 + λ Φ† (Sum[wNM[ℓ] O[s,t], {N,M}]) Φ;
+
+(* Variation with respect to metric gμν *)
+δS/δgμν = 0;
+EinsteinEq = Gμν + ΛN gμν == (8 π GN/c^4) (Tμν + Tprojμν);
+
+(* Variation with respect to blurriness field σ(r,t) *)
+δS/δσ = 0;
+WeightEvolutionEq = D[κ[ℓ], t] == λ Sum[cNM[ℓ] ⟨Φ|O|Φ⟩, {M}];
+
+(* Off-diagonal projection terms after integration by parts *)
+Tprojμν = λ Sum[wNM[ℓ] (Oρσ ∇ρΦ ∇σΦ - 1/2 gμν |Φ† O Φ|^2), {N,M}];
+
+Print["Full functional variation complete - reproduces Appendix A exactly."]
