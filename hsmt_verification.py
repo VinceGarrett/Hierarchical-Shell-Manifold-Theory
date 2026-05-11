@@ -14,13 +14,16 @@ import sympy as sp
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 # ===================================================================
-# CANONICAL PARAMETERS
+# CANONICAL PARAMETERS (exact mathematical constants)
 # ===================================================================
 sigma0 = 0.35
-alpha = 4.0816
+G = 0.915965594177219          # Catalan's constant
+alpha = np.pi + G              # ≈ 4.057558
+
 ell0 = 1e-3
 Higgs_vev = 246.0
 
+# Exact slopes derived from shape-invariance
 kappa_slope = 4 * np.pi / 3
 b_slope     = 2 * np.sqrt(3)
 c_slope     = (np.pi + np.e) / 2
@@ -33,8 +36,13 @@ A = alpha * kappa_slope
 B = alpha * b_slope
 m0 = alpha * c_slope
 
-print("=== HSMT Verification Script v5.73 - Final Expanded ===")
-print(f"α = {alpha:.4f} | σ₀ = {sigma0} | A/α = {A/alpha:.2f} | B/α = {B/alpha:.2f} | m0/α = {m0/alpha:.2f}\n")
+print("=== HSMT Verification Script v5.74 - Updated with α = π + G ===")
+print(f"α = π + G ≈ {alpha:.6f}")
+print(f"G (Catalan's constant) ≈ {G:.12f}")
+print(f"A/α = {A/alpha:.6f} ({4*np.pi/3:.6f})")
+print(f"B/α = {B/alpha:.6f} ({2*np.sqrt(3):.6f})")
+print(f"m0/α = {m0/alpha:.6f} ({(np.pi + np.e)/2:.6f})")
+print(f"σ₀ = {sigma0}\n")
 
 # ===================================================================
 # MULTIFRACTAL MEASURE & GAUSSIAN KERNEL
