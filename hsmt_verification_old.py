@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 # ===================================================================
 # CANONICAL PARAMETERS (fixed by the theory)
 # ===================================================================
-sigma0 = 0.35
+sigma0 = 0.35355339059327376220042218105242
 alpha = 4.0816
 ell0 = 1e-3
 Higgs_vev = 246.0
