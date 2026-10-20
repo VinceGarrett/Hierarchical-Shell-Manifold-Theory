@@ -1,12 +1,25 @@
-## Verification Script
+# Hierarchical Shell Manifold Theory (HSMT)
 
-`hsmt_verification.py` reproduces the numerical evaluation of Yukawa matrices and fermion masses from overlap integrals in the N=-1 shell.
+This repository collects the HSMT paper series, computational verification work, figures, numerical studies, and experimental benchmark material.
 
-**Current status (as of May 2026):**
-- Electron mass: 0.51168 MeV (0.13% error)
-- Muon mass: 105.78 MeV (0.115% error)
-- Tau mass: 1776.12 GeV (0.042% error)
+## Repository map
 
-Run with: `python hsmt_verification.py`
+- `papers/hsmt/` — HSMT papers and status papers.
+- `papers/other-projects/chemistry/` — battery and materials papers not part of the HSMT core.
+- `papers/other-projects/computing/` — computing/device concept papers not part of the HSMT core.
+- `papers/other-projects/other/` — other research papers.
+- `research/verification/` — HSMT verification and benchmark scripts.
+- `research/figures/` — figures and plots.
+- `research/mathematica/` — Mathematica notebooks.
+- `research/mcmc/` — MCMC fit material.
+- `research/class/` — modified CLASS material.
+- `research/predictions/` — prediction notes.
+- `experiments/p3/` — P3 six-state analog benchmark documentation and future controlled results.
 
-All calculations use the canonical parameters listed in the main paper.
+## Organization note
+
+The October 2026 repository cleanup changes paths only. Existing filenames are preserved so the scientific record is not silently renamed or rewritten.
+
+## Historical verification note
+
+The previous root README described an earlier Yukawa-matrix verification script and May 2026 mass-fit status. That material belongs with the verification archive rather than serving as the repository-wide description. No scientific result is altered by this folder reorganization.
